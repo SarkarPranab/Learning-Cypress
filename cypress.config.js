@@ -29,7 +29,10 @@ module.exports = defineConfig({
     runMode: 1,
   },
   e2e: {
-    specPattern: "cypress/integration/examples/bdd/*.feature",
+    specPattern: [
+      "cypress/integration/examples/bdd/*.feature",
+      "cypress/integration/examples/*.js",
+    ],
     supportFile: false,
     setupNodeEvents,
   },
