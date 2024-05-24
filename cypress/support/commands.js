@@ -13,6 +13,16 @@
 
 import ShopPage from "../integration/pageObjects/ShopPage";
 
+Cypress.Commands.add("LoginAPI", function (username, password) {
+  cy.request("POST", "https://rahulshettyacademy.com/api/ecom/auth/login", {
+    userEmail: username,
+    userPassword: password,
+  }).then((response) => {
+    expect(response.status).to.be.eq(200);
+    Cypress.env("token", response.body.token);
+  });
+});
+
 // Cypress.Commands.add('login', (email, password) => { ... })
 Cypress.Commands.add("selectProduct", (productName) => {
   const shopPage = new ShopPage();
