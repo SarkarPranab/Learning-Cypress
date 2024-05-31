@@ -22,12 +22,16 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
     "@cypress/browserify-preprocessor": "^3.0.2",
+    "convert-excel-to-json": "^1.7.0",
     "cypress": "^13.7.3",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-sql-server": "^1.0.0",
+    "exceljs": "^4.4.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0",
-    "multiple-cucumber-html-reporter": "^3.6.2"
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "neat-csv": "5.1.0"
   }
 }
